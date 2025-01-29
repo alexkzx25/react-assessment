@@ -4,7 +4,7 @@ import { SalesLineChart } from "./components/salesLineChart.tsx";
 import { SalesBarChart } from "./components/salesBarChart.tsx";
 import { CategoryPieChart } from "./components/categoryPieChart.tsx";
 import { UsersTable, ProductsTable } from "./components/usersTable.tsx";
-
+import './index.css';
 
 // Main App Component
 export default function App() {
