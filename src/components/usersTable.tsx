@@ -17,8 +17,16 @@ import {
 export const UsersTable = () => {
     const users = useSelector((state) => state.table.users);
     
+    const style = {
+      width: "100%",
+      flex: 1, 
+      resize:"both", 
+      overflow:'hidden', 
+      border:'1px solid #c7c7c7', 
+      background: 'white'  
+    };
     return (
-      <div className="p-4 bg-white rounded-lg shadow-md">
+      <div className="p-4 bg-white rounded-lg shadow-md" style={style} >
         <h2 className="text-xl font-semibold mb-4">Users</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-200">
@@ -53,11 +61,19 @@ export const UsersTable = () => {
     );
   };
   
-  export const ProductsTable = () => {
+  export const ProductsTable = (props) => {
     const products = useSelector((state) => state.table.products);
     
+    const style = {
+      width: "100%",
+      flex: 1, 
+      resize:"both", 
+      overflow:'hidden', 
+      border:'1px solid #c7c7c7', 
+      background: 'white'  
+    };
     return (
-      <div className="p-4 bg-white rounded-lg shadow-md">
+      <div className="p-4 bg-white rounded-lg shadow-md" style={style}>
         <h2 className="text-xl font-semibold mb-4">Products</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-200">
